@@ -1,28 +1,36 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="app" class="">
+    <NavBar txt="INGRESAR"/>
+    <Home />
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+/* Importando los componentes */
+import NavBar from './components/NavBar.vue';
+import Home from './components/Home.vue';
+import HelloWorld from './components/HelloWorld.vue';
+
 
 export default {
   name: 'app',
   components: {
+    NavBar,
+    Home,
     HelloWorld
   }
 }
 </script>
 
 <style>
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,700,800);
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
 }
 </style>
