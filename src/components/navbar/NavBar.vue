@@ -1,49 +1,39 @@
 <template>
-  <div class="nav fixed-top">
-    <div class="line_black">
-			<div class="container text-right">
-				<span>{{ txt }}</span>
-				<span class="face">f</span>
-			</div>
-		</div>
+  <div class="">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+				<LogoNav/>
+				<BtnCollapse/>
+				<LinkNav/>
+      </div>
+    </nav>
   </div>
 </template>
 
 <script>
-/* Importando los componentes */
-import NavFace from "./NavFace.vue";
+import LogoNav from './navigation/LogoNav.vue';
+import BtnCollapse from './navigation/BtnCollapse.vue';
+import LinkNav from './navigation/LinkNav.vue';
 
 export default {
   name: "NavBar",
   components: {
-    NavFace,
-    HelloWorld,
-    NavBar
-  },
-  props: {
-    txt: String
+		LogoNav,
+		BtnCollapse,
+    LinkNav
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.line_black {
-  font-size: 10px;
+.navbar {
+  margin-top: 1rem;
+	padding: 15px 0;
 }
-.line_black {
-  font-size: 12px;
-  background: #000;
-  padding: 5px 0;
-}
-.line_black * {
-  color: #fff;
-}
-.line_black span {
-  cursor: pointer;
-}
-.line_black .face {
-  margin-left: 20px;
-  font-weight: 600;
+
+.fixed-top{
+  z-index: 1000;
 }
 </style>

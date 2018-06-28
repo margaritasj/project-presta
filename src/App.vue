@@ -1,7 +1,8 @@
 <template>
   <div id="app" class="">
-    <NavBar txt="INGRESAR"/>
-    <Home />
+    <BlackBar txt="INGRESAR"/>
+    <Home/>
+    <NavBar/>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -9,15 +10,17 @@
 <script>
 
 /* Importando los componentes */
-import NavBar from './components/NavBar.vue';
-import Home from './components/Home.vue';
+import BlackBar from './components/blackbar/BlackBar.vue';
+import NavBar from './components/navbar/NavBar.vue';
+import Home from './components/home/Header.vue';
 import HelloWorld from './components/HelloWorld.vue';
 
 
 export default {
   name: 'app',
   components: {
-    NavBar,
+    BlackBar,
+    NavBar, 
     Home,
     HelloWorld
   }

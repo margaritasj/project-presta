@@ -1,12 +1,12 @@
 <template>
-  <div class="nav">
+  <div class="black">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 d-flex justify-content-end line-black fixed-top">
 					<span>{{ txt }}</span>
 					<span>
 						<a href="https://www.facebook.com/Prestamype/" target="_blank" class="f-icon">
-							<img src="../assets/images/facebook.png">
+							<img src="../../assets/images/facebook.png">
 						</a>
 					</span>
 				</div>
@@ -17,15 +17,15 @@
 
 <script>
 export default {
-  name: "NavBar",
+  name: "BlackBar",
   props: {
     txt: String
   }
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/* Estilos para la barra negra */
 .line-black {
   background: #000;
   color: #fff;
